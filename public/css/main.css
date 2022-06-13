@@ -1,0 +1,5 @@
+.fixheight {
+    height: 20vh;
+    width: auto !important;
+    object-fit: contain;
+}

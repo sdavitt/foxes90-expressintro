@@ -1,2 +1,10 @@
-<h1>Welcome to Express with EJS templating, Foxes!</h1>
-<p>We'll be exploring some <%= normal %> characters today. Such as: <%= art %>, <%= work %></p>
+<%- include('../partials/header.ejs') %>
+
+    <div class="container">
+        <div class="row justify-content-center m-2">
+            <h1>Welcome to Express with EJS templating, Foxes!</h1>
+            <p>We'll be exploring the many faces of Frank Reynolds.</p>
+        </div>
+    </div>
+
+<%- include('../partials/footer.ejs') %>

@@ -1,2 +1,17 @@
-<h1>Actor: <%= actor %></h1>
-<h1>Character: <%= character %></h1>
+<%- include('../partials/header.ejs') %>
+
+<div class="container">
+    <div class="row justify-content-center m-2">
+        <h1>Who is this Frank? <%= name %>.</h1>
+    </div>
+    <div class="row justify-content-center m-2">
+        <h1><%= desc %></h1>
+    </div>
+    <div class="row justify-content-center m-2">
+        <div class="col-6">
+            <img class="img-fluid" src="/images/<%= image %>" alt="Frank Reynolds">
+        </div>
+    </div>
+</div>
+
+<%- include('../partials/footer.ejs') %>

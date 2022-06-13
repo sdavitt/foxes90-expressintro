@@ -1,0 +1,20 @@
+<%- include('../partials/header.ejs') %>
+
+<div class="container">
+    <div class="row justify-content-center m-4">
+        <h3>The many faces of Frank Reynolds.</h3>
+    </div>
+    <div class="row justify-content-center m-4">
+        <% Object.values(characters).forEach( character => { %>
+            <div class="card m-2" style="width: 18rem;">
+                <img src="/images/<%= character.image %>" class="card-img-top fixheight" alt="<%= character.name %>">
+                <div class="card-body">
+                  <h5 class="card-title"><%= character.name %></h5>
+                  <a href="/frank/<%= character.name %>" class="btn btn-primary">Meet this Frank</a>
+                </div>
+              </div>
+        <% }) %>
+    </div>
+</div>
+
+<%- include('../partials/footer.ejs') %>

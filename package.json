@@ -1,0 +1,15 @@
+{
+  "name": "foxes90-helloexpress",
+  "version": "1.0.0",
+  "description": "Foxes90 Hello World Express App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
+  }
+}
